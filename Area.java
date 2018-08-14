@@ -17,6 +17,9 @@ public class Area {
 
 class Rectangle{
     double length,breadth;
+    public Rectangle() {
+		// TODO Auto-generated constructor stub
+	}
     Rectangle(double length, double breadth){
         this.length = length;
         this.breadth = breadth;
@@ -33,6 +36,10 @@ class Rectangle{
 
 class Circle{
     double radius;
+    
+    public Circle() {
+		// TODO Auto-generated constructor stub
+	}
     static final double pie=3.14;
     Circle(double radius){
         this.radius = radius;
