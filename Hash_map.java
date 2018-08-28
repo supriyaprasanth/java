@@ -6,11 +6,13 @@ import java.util.Map.Entry;
 import java.util.Iterator;
 import java.util.Set;
 
-public class Hash_map {
+public class HashMapTest {
 
 	public static void main(String args[]) {
 
 		HashMap<String, String> hashmap = new HashMap<String, String>();
+		
+		//HashMap<String, String> hashmap2=(HashMap<String, String>)hashmap.clone();
 
 		hashmap.put("A", "Apple");
 		hashmap.put("B", "Banana");
@@ -23,7 +25,7 @@ public class Hash_map {
 		Set<Entry<String, String>> set1 = hashmap.entrySet();
 		Iterator<Entry<String, String>> iterator = set1.iterator();
 		while (iterator.hasNext()) {
-			Map.Entry map_entry = iterator.next();
+			Map.Entry<String,String> map_entry = iterator.next();
 			System.out.print("\nkey : " + map_entry.getKey() + "  Value : " + map_entry.getValue());
 		}
 		String key_input="C";
@@ -35,7 +37,7 @@ public class Hash_map {
 		Set<Entry<String, String>> set2 = hashmap.entrySet();
 		Iterator<Entry<String, String>> iterator1 = set2.iterator();
 		while (iterator1.hasNext()) {
-			Map.Entry map_entry2 = iterator1.next();
+			Map.Entry<String, String> map_entry2 = iterator1.next();
 			System.out.print("\nKey : " + map_entry2.getKey() + "  Value : " + map_entry2.getValue());
 		}
 		System.out.println("\n");
@@ -44,7 +46,8 @@ public class Hash_map {
 		System.out.println("Value at the given index is : " + hashmap.get("D"));
 		System.out.println("True if hashmap contains the key : "+hashmap.containsKey("A"));
 		System.out.println("False if hashmap doesnot contains the key : "+hashmap.containsKey("Z"));
-		//System.out.println(hashmap.containsValue(iterator1“Apple”));
+		System.out.println("True if value exists : " +hashmap.containsValue("Apple"));
+		System.out.println("False if value doesnot exists : " +hashmap.containsValue("strawberry"));
 		System.out.println("True if hashmap is empty : "+hashmap.isEmpty());
 		
 
