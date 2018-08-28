@@ -13,7 +13,7 @@ public class Hash_map {
 		HashMap<String, String> hashmap = new HashMap<String, String>();
 
 		hashmap.put("A", "Apple");
-		hashmap.put("B", "ButterFruit");
+		hashmap.put("B", "Banana");
 		hashmap.put("C", "Coconut");
 		hashmap.put("D", "Durian");
 		hashmap.put("E", "EggFruit");
