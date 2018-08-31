@@ -9,14 +9,12 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-	<br>
-	<br>
-	<br>
-	<hr>
-	<br>
-	<br>
-	<br>
+	<br><br>
 	<div align="center">
+		<div style="background-color: #1a8cff" align="center">
+		sdlkjhf
+		</div>
+		<br> <br>
 		<form action="Home.jsp" method="post">
 			<fieldset style="width: 300px; height: 180px">
 				<legend>Login Here</legend>
