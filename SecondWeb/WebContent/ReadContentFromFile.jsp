@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Display</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
+	<br><br><br><hr><br>
+	<center>
 	<%
 		String fileName = "/WEB-INF/Data.txt";
 		InputStream ins = application.getResourceAsStream(fileName);
@@ -39,5 +41,6 @@
 			out.println(e.getMessage());
 		}
 	%>
+	</center>
 </body>
 </html>
